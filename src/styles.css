@@ -1,0 +1,115 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  color: #333;
+  font-weight: 500;
+  margin: 0;
+}
+
+code {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  outline: none;
+}
+
+.item {
+  margin: 1rem;
+  margin-top: 0;
+}
+
+.input-container {
+  display: flex;
+  flex-flow: column;
+  /* margin: 1rem; */
+  width: fit-content;
+}
+
+.label {
+  color: #333;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Focus */
+
+.label.focus {
+  color: #2962ff;
+}
+
+.input.focus {
+  border-color: #2962ff;
+}
+
+.label.error {
+  color: #d32f2f;
+}
+
+.input {
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid #828282;
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  resize: none;
+  transition: all 0.2s ease;
+}
+
+.input span {
+  color: #828282;
+}
+
+/* .input:focus {
+  border-color: #2962ff;
+} */
+
+.input input {
+  border: none;
+  background: transparent;
+  width: 100%;
+}
+
+.input input::placeholder {
+  color: #828282;
+}
+
+/* ! ERROR */
+
+.input.error {
+  border-color: #d32f2f;
+}
+
+/* ? Helper text */
+
+.help-text {
+  font-size: 0.75rem;
+  color: #828282;
+  margin: 0.25rem 0;
+}
+
+.help-text.error {
+  color: #d32f2f;
+}
+
+.input.disabled {
+  background-color: #f2f2f2;
+  border-color: #e0e0e0;
+}
